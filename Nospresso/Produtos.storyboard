@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yIW-kc-yPu">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+        <array key="OpenSans-Light.ttf">
+            <string>OpenSans-Light</string>
+        </array>
+        <array key="OpenSans-LightItalic.ttf">
+            <string>OpenSans-LightItalic</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+        <array key="OpenSans-SemiBoldItalic.ttf">
+            <string>OpenSans-SemiBoldItalic</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="kDT-qe-oCZ">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="yIW-kc-yPu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="opj-vg-KZr"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Ou-Rx-tjG">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8pA-b0-Tiu" kind="relationship" relationship="rootViewController" id="xP6-S5-vyV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ea4-Fn-d2C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-505.79710144927537" y="85.714285714285708"/>
+        </scene>
+        <!--Produtos-->
+        <scene sceneID="QTE-RT-SEa">
+            <objects>
+                <viewController title="Produtos" id="8pA-b0-Tiu" customClass="MenuProdutosViewController" customModule="Nospresso" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OMP-g1-sc4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lIa-wk-nWu" userLabel="Maquinas">
+                                <rect key="frame" x="0.0" y="316.66666666666674" width="414" height="273.33333333333326"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maquina-inicio" translatesAutoresizingMaskIntoConstraints="NO" id="yIp-Rt-Yzi">
+                                        <rect key="frame" x="294" y="63.666666666666629" width="120" height="146"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jtQ-CG-Ahw">
+                                        <rect key="frame" x="20" y="188.33333333333331" width="141.33333333333334" height="65"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Máquinas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DoS-Qo-ZuV">
+                                                <rect key="frame" x="0.0" y="0.0" width="127.66666666666667" height="35.666666666666664"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="26"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sem elas não rola café" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkh-qz-RHc">
+                                                <rect key="frame" x="0.0" y="45.666666666666629" width="141.33333333333334" height="19.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="maquinas"/>
+                                <constraints>
+                                    <constraint firstItem="jtQ-CG-Ahw" firstAttribute="leading" secondItem="lIa-wk-nWu" secondAttribute="leading" constant="20" id="C9M-V7-dX2"/>
+                                    <constraint firstAttribute="trailing" secondItem="yIp-Rt-Yzi" secondAttribute="trailing" id="DBP-ts-zKz"/>
+                                    <constraint firstAttribute="bottom" secondItem="jtQ-CG-Ahw" secondAttribute="bottom" constant="20" id="Xbs-i5-rLK"/>
+                                    <constraint firstItem="yIp-Rt-Yzi" firstAttribute="centerY" secondItem="lIa-wk-nWu" secondAttribute="centerY" id="YcQ-Jg-4dz"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L0l-ny-6xZ" userLabel="☕️">
+                                <rect key="frame" x="0.0" y="44" width="414" height="272.66666666666669"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsulas-inicio" translatesAutoresizingMaskIntoConstraints="NO" id="edg-pr-zZJ">
+                                        <rect key="frame" x="278" y="68.333333333333314" width="136" height="136"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="J9g-Ud-w8s">
+                                        <rect key="frame" x="19.999999999999986" y="187.66666666666666" width="219.66666666666663" height="65"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cafés" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQO-5z-lIC">
+                                                <rect key="frame" x="0.0" y="0.0" width="70.666666666666671" height="35.666666666666664"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="26"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cremosos, espumosos, hmmmmm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MOh-lW-OfP">
+                                                <rect key="frame" x="0.0" y="45.666666666666657" width="219.66666666666666" height="19.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="cafes"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="J9g-Ud-w8s" firstAttribute="leading" secondItem="L0l-ny-6xZ" secondAttribute="leading" constant="20" id="4LT-PD-ec6"/>
+                                    <constraint firstAttribute="trailing" secondItem="edg-pr-zZJ" secondAttribute="trailing" id="LUl-nW-9In"/>
+                                    <constraint firstAttribute="bottom" secondItem="J9g-Ud-w8s" secondAttribute="bottom" constant="20" id="oul-sN-xnk"/>
+                                    <constraint firstItem="edg-pr-zZJ" firstAttribute="centerY" secondItem="L0l-ny-6xZ" secondAttribute="centerY" id="pQh-Fy-kff"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="4ew-RV-uJs" appends="YES" id="8WK-GM-44U"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KEX-Z6-M4d" userLabel="acessorios">
+                                <rect key="frame" x="0.0" y="590" width="414" height="272.66666666666674"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xicaras-inicio" translatesAutoresizingMaskIntoConstraints="NO" id="TaY-8a-dlx">
+                                        <rect key="frame" x="267" y="62.666666666666629" width="147" height="147"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UMS-j4-Ipv">
+                                        <rect key="frame" x="20" y="187.66666666666663" width="144" height="65"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acessórios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kva-Lj-9D2">
+                                                <rect key="frame" x="0.0" y="0.0" width="137.66666666666666" height="35.666666666666664"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="26"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pra completar a balaca" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBe-ZY-jso">
+                                                <rect key="frame" x="0.0" y="45.666666666666742" width="144" height="19.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="acessorios"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="TaY-8a-dlx" secondAttribute="trailing" id="KcB-IN-4L1"/>
+                                    <constraint firstItem="TaY-8a-dlx" firstAttribute="centerY" secondItem="KEX-Z6-M4d" secondAttribute="centerY" id="Tr6-4q-BlP"/>
+                                    <constraint firstItem="UMS-j4-Ipv" firstAttribute="leading" secondItem="KEX-Z6-M4d" secondAttribute="leading" constant="20" id="sC2-tO-Sgn"/>
+                                    <constraint firstAttribute="bottom" secondItem="UMS-j4-Ipv" secondAttribute="bottom" constant="20" id="uMf-Pi-1T6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vkn-I2-8eH"/>
+                        <color key="backgroundColor" name="cafes"/>
+                        <constraints>
+                            <constraint firstItem="lIa-wk-nWu" firstAttribute="height" secondItem="L0l-ny-6xZ" secondAttribute="height" multiplier="1.00207" id="26z-As-ecw"/>
+                            <constraint firstItem="L0l-ny-6xZ" firstAttribute="leading" secondItem="vkn-I2-8eH" secondAttribute="leading" id="5Vb-mn-6g7"/>
+                            <constraint firstItem="KEX-Z6-M4d" firstAttribute="height" secondItem="L0l-ny-6xZ" secondAttribute="height" id="5s9-3U-gqT"/>
+                            <constraint firstItem="KEX-Z6-M4d" firstAttribute="leading" secondItem="vkn-I2-8eH" secondAttribute="leading" id="FmM-dz-gXJ"/>
+                            <constraint firstItem="lIa-wk-nWu" firstAttribute="top" secondItem="L0l-ny-6xZ" secondAttribute="bottom" id="Giv-MN-LpG"/>
+                            <constraint firstItem="L0l-ny-6xZ" firstAttribute="height" secondItem="vkn-I2-8eH" secondAttribute="height" multiplier="1/3" id="QEd-pq-p3V"/>
+                            <constraint firstItem="vkn-I2-8eH" firstAttribute="trailing" secondItem="L0l-ny-6xZ" secondAttribute="trailing" id="dBg-mb-vgZ"/>
+                            <constraint firstItem="lIa-wk-nWu" firstAttribute="leading" secondItem="vkn-I2-8eH" secondAttribute="leading" id="dVP-Hk-ABX"/>
+                            <constraint firstItem="KEX-Z6-M4d" firstAttribute="top" secondItem="lIa-wk-nWu" secondAttribute="bottom" id="dtQ-al-h8d"/>
+                            <constraint firstItem="L0l-ny-6xZ" firstAttribute="top" secondItem="vkn-I2-8eH" secondAttribute="top" id="lfR-MU-B89"/>
+                            <constraint firstItem="KEX-Z6-M4d" firstAttribute="trailing" secondItem="vkn-I2-8eH" secondAttribute="trailing" id="qMd-da-4Ti"/>
+                            <constraint firstItem="lIa-wk-nWu" firstAttribute="trailing" secondItem="vkn-I2-8eH" secondAttribute="trailing" id="z0s-W1-UJR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Produtos" id="xB8-oX-diF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r16-rc-Pzv" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="4ew-RV-uJs" userLabel="Toque cafes">
+                    <connections>
+                        <segue destination="qaM-PJ-6Eu" kind="show" id="PqS-D1-aHK"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="350.72463768115944" y="85.714285714285708"/>
+        </scene>
+        <!--Cafés-->
+        <scene sceneID="onW-LT-Nss">
+            <objects>
+                <viewController title="Cafés" id="qaM-PJ-6Eu" customClass="CafesViewController" customModule="Nospresso" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AjC-32-T57">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNd-yI-OLa">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vish... deu erro" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFA-ud-eEa">
+                                        <rect key="frame" x="20" y="366.66666666666669" width="374" height="41"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="ZFA-ud-eEa" firstAttribute="leading" secondItem="bNd-yI-OLa" secondAttribute="leading" constant="20" id="EqL-3q-Ojc"/>
+                                    <constraint firstItem="ZFA-ud-eEa" firstAttribute="centerY" secondItem="bNd-yI-OLa" secondAttribute="centerY" id="FwJ-Ho-h9p"/>
+                                    <constraint firstItem="ZFA-ud-eEa" firstAttribute="centerX" secondItem="bNd-yI-OLa" secondAttribute="centerX" id="LW0-Ou-pcs"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zEy-fa-J2c">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cafe-celula" rowHeight="100" id="CTn-Ea-dPK" customClass="CafeTableViewCell" customModule="Nospresso" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CTn-Ea-dPK" id="yU4-LR-1uP">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D2E-Fq-oqY">
+                                                    <rect key="frame" x="16" y="17.666666666666671" width="65" height="65"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="65" id="Yp7-K9-E3z"/>
+                                                        <constraint firstAttribute="height" constant="65" id="qmH-0h-dQw"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="AXw-KI-tzg">
+                                                    <rect key="frame" x="97" y="9.9999999999999964" width="265" height="44.666666666666657"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6MR-Fl-TP2">
+                                                            <rect key="frame" x="0.0" y="0.0" width="49.666666666666664" height="26"/>
+                                                            <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="19"/>
+                                                            <color key="textColor" name="texto-cinza"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WdG-98-2Qf">
+                                                            <rect key="frame" x="0.0" y="28" width="27.333333333333332" height="16.666666666666671"/>
+                                                            <fontDescription key="fontDescription" name="OpenSans-LightItalic" family="Open Sans" pointSize="12"/>
+                                                            <color key="textColor" name="texto-discreto"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sj-0w-qPN">
+                                                    <rect key="frame" x="97" y="77.666666666666671" width="20.333333333333329" height="12.333333333333329"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans-LightItalic" family="Open Sans" pointSize="9"/>
+                                                    <color key="textColor" name="texto-discreto"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="IOa-by-ojt">
+                                                    <rect key="frame" x="362" y="8.6666666666666643" width="40" height="83"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vx0-ef-IRi">
+                                                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="40" id="VfI-eQ-01Y"/>
+                                                                <constraint firstAttribute="height" constant="40" id="wrv-tk-4eK"/>
+                                                            </constraints>
+                                                            <color key="tintColor" name="favorito-preenchido"/>
+                                                            <state key="normal" image="heart" catalog="system"/>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lob-VE-jyw">
+                                                            <rect key="frame" x="0.0" y="43" width="40" height="40"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="R63-12-iGw"/>
+                                                                <constraint firstAttribute="width" constant="40" id="kmb-Ov-Ov0"/>
+                                                            </constraints>
+                                                            <color key="tintColor" name="texto-cinza"/>
+                                                            <state key="normal" image="bag.badge.plus" catalog="system"/>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uc6-Gz-wVi">
+                                                    <rect key="frame" x="316" y="72.333333333333329" width="38" height="19.333333333333329"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="14"/>
+                                                    <color key="textColor" name="preco"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="IOa-by-ojt" firstAttribute="centerY" secondItem="yU4-LR-1uP" secondAttribute="centerY" id="4L0-ev-suh"/>
+                                                <constraint firstItem="D2E-Fq-oqY" firstAttribute="centerY" secondItem="yU4-LR-1uP" secondAttribute="centerY" id="7UA-9E-GWz"/>
+                                                <constraint firstItem="AXw-KI-tzg" firstAttribute="leading" secondItem="D2E-Fq-oqY" secondAttribute="trailing" constant="16" id="BVL-NN-bJA"/>
+                                                <constraint firstItem="D2E-Fq-oqY" firstAttribute="leading" secondItem="yU4-LR-1uP" secondAttribute="leading" constant="16" id="L6d-sy-iai"/>
+                                                <constraint firstAttribute="bottom" secondItem="6sj-0w-qPN" secondAttribute="bottom" constant="10" id="TVi-L5-zt1"/>
+                                                <constraint firstItem="IOa-by-ojt" firstAttribute="leading" secondItem="Uc6-Gz-wVi" secondAttribute="trailing" constant="8" id="Z2S-wG-AuZ"/>
+                                                <constraint firstItem="AXw-KI-tzg" firstAttribute="top" secondItem="yU4-LR-1uP" secondAttribute="top" constant="10" id="Zq8-I0-6wx"/>
+                                                <constraint firstItem="6sj-0w-qPN" firstAttribute="leading" secondItem="AXw-KI-tzg" secondAttribute="leading" id="evR-gj-e0w"/>
+                                                <constraint firstAttribute="trailing" secondItem="IOa-by-ojt" secondAttribute="trailing" constant="12" id="fha-gt-6xH"/>
+                                                <constraint firstItem="AXw-KI-tzg" firstAttribute="trailing" secondItem="IOa-by-ojt" secondAttribute="leading" id="iRc-sS-ydM"/>
+                                                <constraint firstItem="Uc6-Gz-wVi" firstAttribute="firstBaseline" secondItem="6sj-0w-qPN" secondAttribute="firstBaseline" id="y6u-Aw-Nb7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="capsulaImageView" destination="D2E-Fq-oqY" id="T5D-yx-h7I"/>
+                                            <outlet property="descricaoLabel" destination="WdG-98-2Qf" id="y3b-o2-p8E"/>
+                                            <outlet property="intensidadeLabel" destination="6sj-0w-qPN" id="Zgv-zH-78c"/>
+                                            <outlet property="precoLabel" destination="Uc6-Gz-wVi" id="2Fq-uy-pxE"/>
+                                            <outlet property="tituloLabel" destination="6MR-Fl-TP2" id="Zqb-oa-z9b"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="4UO-Am-cWE">
+                                <rect key="frame" x="188.66666666666666" y="456.66666666666669" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uT0-bw-2uE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bNd-yI-OLa" firstAttribute="leading" secondItem="uT0-bw-2uE" secondAttribute="leading" id="BuL-El-4ld"/>
+                            <constraint firstItem="uT0-bw-2uE" firstAttribute="trailing" secondItem="zEy-fa-J2c" secondAttribute="trailing" id="LLv-Gc-8LZ"/>
+                            <constraint firstItem="bNd-yI-OLa" firstAttribute="top" secondItem="uT0-bw-2uE" secondAttribute="top" id="OIh-o9-zHJ"/>
+                            <constraint firstItem="4UO-Am-cWE" firstAttribute="centerX" secondItem="uT0-bw-2uE" secondAttribute="centerX" id="Sch-op-0eR"/>
+                            <constraint firstItem="4UO-Am-cWE" firstAttribute="centerY" secondItem="uT0-bw-2uE" secondAttribute="centerY" id="ZMu-fx-Vha"/>
+                            <constraint firstItem="zEy-fa-J2c" firstAttribute="top" secondItem="uT0-bw-2uE" secondAttribute="top" id="dyZ-Ot-ZcM"/>
+                            <constraint firstItem="uT0-bw-2uE" firstAttribute="bottom" secondItem="bNd-yI-OLa" secondAttribute="bottom" id="h6e-rZ-Yjg"/>
+                            <constraint firstItem="zEy-fa-J2c" firstAttribute="leading" secondItem="uT0-bw-2uE" secondAttribute="leading" id="hh0-iN-Nkf"/>
+                            <constraint firstItem="uT0-bw-2uE" firstAttribute="bottom" secondItem="zEy-fa-J2c" secondAttribute="bottom" id="izU-BW-Qpj"/>
+                            <constraint firstItem="uT0-bw-2uE" firstAttribute="trailing" secondItem="bNd-yI-OLa" secondAttribute="trailing" id="j5c-6E-Fjs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cafés" id="mYy-gi-3TY"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="4UO-Am-cWE" id="EaM-lm-JBk"/>
+                        <outlet property="tableView" destination="zEy-fa-J2c" id="z0n-h9-qh8"/>
+                        <outlet property="telaDeErro" destination="bNd-yI-OLa" id="H0V-py-YIZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zkz-my-Mz6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1298.5507246376812" y="85.714285714285708"/>
+        </scene>
+        <!--Detalhes Cafe View Controller-->
+        <scene sceneID="9fX-lL-xsd">
+            <objects>
+                <viewController storyboardIdentifier="DetalhesCafeViewController" hidesBottomBarWhenPushed="YES" id="T8y-Rn-WST" customClass="DetalhesCafeViewController" customModule="Nospresso" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UGh-yC-AqE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FcW-PW-xMX">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="UhM-iW-7IN" userLabel="Raiz">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="725.66666666666663"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsulas-inicio" translatesAutoresizingMaskIntoConstraints="NO" id="pV1-da-Rlc">
+                                                <rect key="frame" x="16" y="16" width="382" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="xlg-lL-Hn8"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="KB2-8f-Eok" userLabel="Intensidade &amp; Preço">
+                                                <rect key="frame" x="16" y="219" width="382" height="33"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ip7-g8-VF7" userLabel="Intensidade">
+                                                        <rect key="frame" x="0.0" y="0.0" width="191" height="33"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OBZ-7i-7Y6" customClass="ContadorIntensidadeStackView" customModule="Nospresso" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="191" height="7"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="7" id="pHE-eY-FkP"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G44-v8-cBf">
+                                                                <rect key="frame" x="0.0" y="7" width="191" height="26"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drn-sC-r6t">
+                                                        <rect key="frame" x="191" y="0.0" width="191" height="33"/>
+                                                        <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="T6k-0a-sx5" userLabel="Descrição">
+                                                <rect key="frame" x="16" y="305" width="382" height="176"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Café com robusta de monções" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJd-yJ-Kcb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="30"/>
+                                                        <fontDescription key="fontDescription" name="OpenSans-SemiBoldItalic" family="Open Sans" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="DJC-KY-Svf" userLabel="Origem">
+                                                        <rect key="frame" x="0.0" y="40" width="382" height="38.666666666666657"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Origem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tn9-TO-cL0">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="19.333333333333332"/>
+                                                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpm-dc-nfm">
+                                                                <rect key="frame" x="0.0" y="19.333333333333314" width="382" height="19.333333333333329"/>
+                                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                                                <color key="textColor" name="texto-discreto"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JbL-z4-zAv" userLabel="Torrefação">
+                                                        <rect key="frame" x="0.0" y="88.666666666666686" width="382" height="38.666666666666657"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Torrefação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97R-mh-90x">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="19.333333333333332"/>
+                                                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwD-bc-rlX">
+                                                                <rect key="frame" x="0.0" y="19.333333333333314" width="382" height="19.333333333333329"/>
+                                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                                                <color key="textColor" name="texto-discreto"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dUf-Sx-zV8" userLabel="Perfil Aromático">
+                                                        <rect key="frame" x="0.0" y="137.33333333333337" width="382" height="38.666666666666657"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perfil Aromático" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9t-fW-U9G">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="19.333333333333332"/>
+                                                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbR-rY-iX7">
+                                                                <rect key="frame" x="0.0" y="19.333333333333258" width="382" height="19.333333333333329"/>
+                                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                                                <color key="textColor" name="texto-discreto"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rax-av-rKe" userLabel="Formas de Degustação">
+                                                <rect key="frame" x="16" y="534" width="382" height="76.666666666666629"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FORMAS DE DEGUSTAÇÃO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zg1-dS-is0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="16.666666666666668"/>
+                                                        <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4WE-7e-mzD">
+                                                        <rect key="frame" x="0.0" y="16.666666666666629" width="382" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="eJH-Wx-2ag"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9N-X3-kH3">
+                                                <rect key="frame" x="16" y="663.66666666666663" width="382" height="46"/>
+                                                <color key="backgroundColor" name="verdao-vendedor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="iDy-yl-iro"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="14"/>
+                                                <state key="normal" title="Adicionar à Sacola">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="adicionouASacola:" destination="T8y-Rn-WST" eventType="touchUpInside" id="1Kb-Gp-NZH"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="16" left="16" bottom="16" right="16"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="UhM-iW-7IN" firstAttribute="top" secondItem="FcW-PW-xMX" secondAttribute="top" id="IAG-JX-3G8"/>
+                                    <constraint firstItem="UhM-iW-7IN" firstAttribute="leading" secondItem="FcW-PW-xMX" secondAttribute="leading" id="PVJ-JE-nj8"/>
+                                    <constraint firstAttribute="trailing" secondItem="UhM-iW-7IN" secondAttribute="trailing" id="V68-ML-Ng0"/>
+                                    <constraint firstAttribute="bottom" secondItem="UhM-iW-7IN" secondAttribute="bottom" id="Yr6-Ig-hR5"/>
+                                    <constraint firstItem="UhM-iW-7IN" firstAttribute="width" secondItem="FcW-PW-xMX" secondAttribute="width" id="lre-yL-Kds"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DT4-JN-uY4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DT4-JN-uY4" firstAttribute="trailing" secondItem="FcW-PW-xMX" secondAttribute="trailing" id="8ei-f7-9PB"/>
+                            <constraint firstItem="FcW-PW-xMX" firstAttribute="top" secondItem="DT4-JN-uY4" secondAttribute="top" id="EYZ-dJ-h27"/>
+                            <constraint firstItem="FcW-PW-xMX" firstAttribute="width" secondItem="DT4-JN-uY4" secondAttribute="width" id="Qdg-f6-u8Y"/>
+                            <constraint firstItem="DT4-JN-uY4" firstAttribute="bottom" secondItem="FcW-PW-xMX" secondAttribute="bottom" id="iP7-sz-FDr"/>
+                            <constraint firstItem="FcW-PW-xMX" firstAttribute="leading" secondItem="DT4-JN-uY4" secondAttribute="leading" id="lFg-HG-Jbb"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="cafeImageView" destination="pV1-da-Rlc" id="rVx-bx-AyN"/>
+                        <outlet property="descricaoLabel" destination="oJd-yJ-Kcb" id="TCk-aB-C48"/>
+                        <outlet property="intensidadeLabel" destination="G44-v8-cBf" id="8MX-2J-ikK"/>
+                        <outlet property="intensidadeStackView" destination="OBZ-7i-7Y6" id="0nq-HS-oae"/>
+                        <outlet property="origemLabel" destination="gpm-dc-nfm" id="hj4-kt-TZe"/>
+                        <outlet property="perfilAromaticoLabel" destination="vbR-rY-iX7" id="okB-WH-pu7"/>
+                        <outlet property="precoLabel" destination="drn-sC-r6t" id="lTC-ON-2dT"/>
+                        <outlet property="torrefacaoLabel" destination="cwD-bc-rlX" id="MyU-fE-Ia5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rkt-r5-Th9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2135.1999999999998" y="85.907046476761622"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bag.badge.plus" catalog="system" width="124" height="128"/>
+        <image name="capsulas-inicio" width="136" height="136"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="maquina-inicio" width="120" height="146"/>
+        <image name="xicaras-inicio" width="147" height="147"/>
+        <namedColor name="acessorios">
+            <color red="0.94901960784313721" green="0.8901960784313725" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="cafes">
+            <color red="0.92941176470588238" green="0.87058823529411766" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="favorito-preenchido">
+            <color red="0.89803921568627454" green="0.070588235294117646" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="maquinas">
+            <color red="0.86274509803921573" green="0.72156862745098038" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="preco">
+            <color red="0.050980392156862744" green="0.62352941176470589" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="texto-cinza">
+            <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="texto-discreto">
+            <color red="0.56862745098039214" green="0.56862745098039214" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="verdao-vendedor">
+            <color red="0.47843137254901963" green="0.69803921568627447" blue="0.42745098039215684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,16 @@
+PODS:
+  - Nuke (9.5.0)
+
+DEPENDENCIES:
+  - Nuke
+
+SPEC REPOS:
+  trunk:
+    - Nuke
+
+SPEC CHECKSUMS:
+  Nuke: 6f400a4ea957e09149ec335a3c6acdcc814d89e4
+
+PODFILE CHECKSUM: b8708d41cb5fcf329f9f0e50f1c0779b7c08d8d8
+
+COCOAPODS: 1.10.1
